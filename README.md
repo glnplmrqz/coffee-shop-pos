@@ -16,8 +16,7 @@ A simple, lightweight Point of Sale (POS) system for coffee shops built with Pyt
 
 ## 🖥️ Preview
 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6667b174-a790-4fe7-aac6-6a7f53794ec6" />
-
+<img width="1366" height="729" alt="image" src="https://github.com/user-attachments/assets/cccfae5e-a39a-416b-b544-c385c9236bc8" />
 
 ## 🚀 Installation
 
