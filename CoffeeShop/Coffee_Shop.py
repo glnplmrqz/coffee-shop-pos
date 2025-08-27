@@ -185,6 +185,7 @@ class CoffeeShop:
             # Coffee Icon
             if coffeeMenu in self.coffeeImages:
                 iconLabel = Label(btnFrame, image=self.coffeeImages[coffeeMenu], bg='#f5f5dc')
+
                 iconLabel.image = self.coffeeImages[coffeeMenu]
                 iconLabel.pack(side=LEFT, padx=10)
             else:
@@ -440,21 +441,21 @@ class CoffeeShop:
             for itemName, itemPrice, quantity in self.orderItems:
                 receipt += f"{itemName} x{quantity} - ₱{itemPrice * quantity}\n"
                 
-                receipt += f"\nTotal: ₱{total:.2f}\n"
-                receipt += f"Cash Received: ₱{cashAmount:.2f}\n"
-                receipt += f"Change: ₱{change:.2f}\n"
-                receipt += "====================================="
+            receipt += f"\nTotal: ₱{total:.2f}\n"
+            receipt += f"Cash Received: ₱{cashAmount:.2f}\n"
+            receipt += f"Change: ₱{change:.2f}\n"
+            receipt += "====================================="
                 
-                # Show receipt
-                messagebox.showinfo("Payment Successful", 
-                                  f"Payment received!\nChange: ₱{change:.2f}\n\n{receipt}")
+            # Show receipt
+            messagebox.showinfo("Payment Successful", 
+                            f"Payment received!\nChange: ₱{change:.2f}\n\n{receipt}")
                 
-                # Clear the order
-                self.orderItems = []
-                self.updateOrderDisplay()
+            # Clear the order
+            self.orderItems = []
+            self.updateOrderDisplay()
                 
-                # Close payment window
-                paymentWindow.destroy()
+            # Close payment window
+            paymentWindow.destroy()
      # Button frame
         buttonFrame = Frame(paymentWindow, bg='#f5f5dc')
         buttonFrame.pack(pady=15)
