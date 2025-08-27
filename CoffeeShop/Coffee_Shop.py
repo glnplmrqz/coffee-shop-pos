@@ -185,7 +185,6 @@ class CoffeeShop:
             # Coffee Icon
             if coffeeMenu in self.coffeeImages:
                 iconLabel = Label(btnFrame, image=self.coffeeImages[coffeeMenu], bg='#f5f5dc')
-                # keep a reference to avoid GC
                 iconLabel.image = self.coffeeImages[coffeeMenu]
                 iconLabel.pack(side=LEFT, padx=10)
             else:
