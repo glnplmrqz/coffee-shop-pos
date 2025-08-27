@@ -139,16 +139,20 @@ class CoffeeShop:
 
         # Create Buttons
         checkoutButton = Button(buttonFrame,
-                                text="🛒Checkout",
+                                text="Checkout",
                                 font=("Poppins", 12),
-                                bg='#6f4e37', fg='White', padx=20, pady=5,
+                                bg='#6f4e37', fg='White', 
+                                activebackground='#6f4e37', activeforeground='White',
+                                padx=20, pady=5,
                                 command=self.showPaymentWindow)
         checkoutButton.pack(side=LEFT, padx=5)
 
         clearOrder = Button(buttonFrame,
-                            text="🗑️Clear Order",
+                            text="Clear Order",
                             font=("Poppins", 12),
-                            bg='#d9b99b', fg='#333', padx=20, pady=5,
+                            bg='red', fg='white', 
+                            activebackground='red', activeforeground='white',
+                            padx=20, pady=5,
                             command=self.clearOrder)
         clearOrder.pack(side=RIGHT, padx=5)
 
@@ -203,7 +207,9 @@ class CoffeeShop:
 
             # Add button
             addButton = Button(btnFrame, text="Add", font=("Poppins", 10),
-                               bg='#6f4e37', fg='white', padx=10,
+                               bg='#6f4e37', fg='white', 
+                               activebackground='#6f4e37', activeforeground='white',
+                               padx=10,
                                command=lambda n=coffeeMenu, p=prices: self.addToOrder(n, p))
             addButton.pack(side=RIGHT, padx=10)
 
@@ -228,7 +234,7 @@ class CoffeeShop:
                            bg='#6f4e37', fg='white', width=30, anchor="w")
         itemHeader.pack(side=LEFT, padx=10)
 
-        qtyHeader = Label(headerFrame, text="Qty", font=("Poppins", 12, "bold"),
+        qtyHeader = Label(headerFrame, text="Quantity", font=("Poppins", 12, "bold"),
                           bg='#6f4e37', fg='white', width=10)
         qtyHeader.pack(side=LEFT)
 
@@ -310,7 +316,8 @@ class CoffeeShop:
 
             # Remove button
             removeButton = Button(itemFrame, text="Remove", font=("Poppins", 9),
-                                  bg='#333', fg='white', padx=5,
+                                  bg='#333', fg='white',
+                                  activebackground='#333', activeforeground='white', padx=5,
                                   command=lambda idx=i: self.removeItem(idx))
             removeButton.pack(side=LEFT, padx=10)
 
@@ -454,15 +461,17 @@ class CoffeeShop:
         buttonFrame.pack(pady=15)
 
         proceedButton = Button(buttonFrame, text="Proceed", 
-                               font=("Arial", 12), bg='#6f4e37', fg='white', 
+                               font=("Arial", 12), bg='#6f4e37', fg='white',
+                               activebackground='#6f4e37', activeforeground='white', 
                                padx=20, pady=5, command=processPayment)
         proceedButton.pack(side=LEFT, padx=10)
         
         # Cancel button
-        cancel_button = Button(buttonFrame, text="Cancel", 
-                              font=("Arial", 12), bg='#d9b99b', fg='#333', 
+        cancelButton = Button(buttonFrame, text="Cancel", 
+                              font=("Arial", 12), bg='red', fg='white', 
+                              activebackground='red', activeforeground='white',
                               padx=20, pady=5, command=paymentWindow.destroy)
-        cancel_button.pack(side=LEFT, padx=10)    
+        cancelButton.pack(side=LEFT, padx=10)    
 
 # Create the main window
 window = Tk()
