@@ -29,13 +29,16 @@ A simple, lightweight Point of Sale (POS) system for coffee shops built with Pyt
 
 🍵 Default Menu Items
 The system includes sample coffee shop items:
-- Espresso - ₱120
-- Cappuccino - ₱150
-- Latte - ₱160
-- Americano - ₱130
-- Mocha - ₱170
-- Pastry - ₱80
-- Sandwich - ₱150
+- Caramel Macchiato – ₱130
+- Caffè Mocha – ₱120
+- Caffè Latte – ₱110
+- Cappuccino – ₱110
+- Chocolate Cappuccino – ₱125
+- Brewed Coffee – ₱80
+- Espresso (single shot) – ₱70
+- Espresso Macchiato – ₱90
+- White Mocha – ₱130
+- Signature Hot Chocolate – ₱115
 
 🎮 How to Use
 - Start New Order: Click "New Order" to begin
