@@ -4,7 +4,6 @@ A simple, lightweight Point of Sale (POS) system for coffee shops built with Pyt
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
 ![Tkinter](https://img.shields.io/badge/GUI-Tkinter-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## ✨ Features
 
@@ -17,13 +16,12 @@ A simple, lightweight Point of Sale (POS) system for coffee shops built with Pyt
 
 ## 🖥️ Preview
 
-![POS Interface]<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6667b174-a790-4fe7-aac6-6a7f53794ec6" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6667b174-a790-4fe7-aac6-6a7f53794ec6" />
 
 
 ## 🚀 Installation
 
 1. **Clone the repository**:
-```bash
   git clone https://github.com/glnplmrqz/coffee-shop-pos.git
   cd coffee-shop-pos
 2. Ensure Python 3.8+ is installed:
